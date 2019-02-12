@@ -17,10 +17,33 @@ const resize = () =>
 window.addEventListener('resize', resize)
 resize()
 
+context.beginPath()
+context.fillStyle = '#000'
+context.fillRect(0, 0, sizes.width, sizes.height)
+context.closePath()
+
+const drawDiscover = (x, y, radius) => {
+    context.beginPath()
+    //context.fillStyle = 'white'
+    context.arc(x, y, radius, 0, 2 * Math.PI)
+    context.globalCompositeOperation = "destination-out"
+    context.fill()
+    context.closePath()
+}
+
+document.addEventListener('click', e => {
+    const clickX = e.clientX
+    const clickY = e.clientY
+    let radius = 2
+    setInterval(() => {
+        drawDiscover(clickX, clickY, radius+=1)
+    }, 0.5);
+    
+})
 
 
 //Cursor Position and down ?
-const cursor = { x: 0, y: 0, down: false }
+/*const cursor = { x: 0, y: 0, down: false }
 
 window.addEventListener('mousedown', () => {
     cursor.down = true
@@ -34,10 +57,10 @@ window.addEventListener('mouseup', () => {
 document.addEventListener('mousemove', e => {
     cursor.x = e.clientX
     cursor.y = e.clientY
-})
+})*/
 
 //Draw
-const cursorDraw = () => {
+/*const cursorDraw = () => {
     window.requestAnimationFrame(cursorDraw)
     context.beginPath()
     context.strokeStyle = 'white'
@@ -59,7 +82,7 @@ const loop = () => {
         
     }
 }
-loop()
+loop()*/
 
 //Draw canvas
 /*const loop = () => {
