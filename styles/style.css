@@ -203,6 +203,41 @@ html, body {
       height: 100%;
       width: calc((100%/3)*2);
       border: 1px solid black; }
+    .main-view .works-slider .work-selector {
+      position: absolute;
+      right: -25px;
+      height: 40%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 300; }
+      .main-view .works-slider .work-selector .work-current {
+        font-size: 20px; }
+      .main-view .works-slider .work-selector .allworks-button {
+        transform: rotate(90deg);
+        font-size: 16px;
+        text-decoration: none; }
+      .main-view .works-slider .work-selector .allworks-button:before {
+        content: "";
+        display: inline-block;
+        height: 0.6em;
+        vertical-align: bottom;
+        width: 45px;
+        margin-right: 20px;
+        border-top: 1px solid black; }
+      .main-view .works-slider .work-selector .allworks-button:after {
+        content: "";
+        display: inline-block;
+        height: 0.6em;
+        vertical-align: bottom;
+        width: 45px;
+        margin-right: -100%;
+        margin-left: 20px;
+        border-top: 1px solid black; }
+      .main-view .works-slider .work-selector .work-total {
+        font-size: 20px; }
   .main-view .work-menu {
     display: none !important;
     position: absolute;

@@ -1,0 +1,45 @@
+{
+    "mosaiculture":{
+        "title": "Mosaïculture",
+        
+        "date": "July 2018",
+        "skills": "HTML/CSS/JS",
+        "client": "Mosaiculture",
+        "role": "Dev, Design",
+
+        "src": "images/mosaiculture.jpg"
+    },
+
+    "ecurie st martin":{
+        "title": "Les écuries Saint Martin",
+        
+        "date": "June 2018",
+        "skills": "HTML/CSS/JS",
+        "client": "Ecurie St Martin",
+        "role": "Dev, Design",
+
+        "src": "images/ecurie.jpg"
+    },
+
+    "techstory":{
+        "title": "Tech Story",
+        
+        "date": "December 2018",
+        "skills": "HTML, CSS, JS, Three.js",
+        "client": "School",
+        "role": "Dev, Design",
+
+        "src": "images/techstory.jpg"
+    },
+
+    "epic fight":{
+        "title": "Epic Fight",
+        
+        "date": "April 2018",
+        "skills": "Illustrator, Photoshop",
+        "client": "School",
+        "role": "Design",
+
+        "src": "images/epicfight.jpg"
+    }
+}
