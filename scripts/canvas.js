@@ -36,9 +36,8 @@ document.addEventListener('click', e => {
     const clickY = e.clientY
     let radius = 2
     setInterval(() => {
-        drawDiscover(clickX, clickY, radius+=1)
-    }, 0.5);
-    
+        drawDiscover(clickX, clickY, radius+=5)
+    }, 10);
 })
 
 

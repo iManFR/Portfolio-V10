@@ -1,57 +1,52 @@
 html, body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.home{
-    background-image: url(../images/back.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+*::selection{
+    background-color: black;
+    color: white;
+}
+
+.view{
     position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.lines{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: -10;
+    .vertical-lines{
+        height: 100vh;
+        width: calc(100vw/6);
+        border-right: 1px solid #cacaca;
+        opacity: 0.4;
+    }
+}
+
+/*.start-view{
+    //background-image: url(../images/back.png);
+    //background-position: center;
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    //position: relative;
     height: 100vh;
     width: 100%;
     overflow: hidden;
     //cursor: none;
-    
-}
-
-.works{
-    background-color: white;
-    height: 100vh;
-    width: 100%;
-}
-
-.scroll{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
     z-index: 1;
-    user-select: none;
-}
+}*/
 
-p{
-    font-family: 'Inconsolata', monospace;
-}
-
-.vl_contain{
-    width: 100%;
-    min-height: 80px;
-}
-
-.vl{
-    border-left: 1px solid black;
-    min-height: 55px;
-    position: absolute;
-    left: 50%;
-    margin-left: -3px;
-    bottom: 1;
-}
-
-::-webkit-scrollbar {									/* Scrollbars */
+::-webkit-scrollbar {
 	display: none;
 }
 
