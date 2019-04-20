@@ -4,11 +4,14 @@
 const $home = document.querySelector('.home-view')
 
 const $main = document.querySelector('.main-view')
+const $worksSlider = document.querySelector('.works-slider')
 const $aboutButton = document.querySelector('.about-link')
+
+const $allworks = document.querySelector('.allworks-button')
+const $workMenu = document.querySelector('.work-menu')
 
 const $about = document.querySelector('.about-view')
 const $backWorkButton = $about.querySelector('.backworks-button')
-console.log($backWorkButton);
 
 
 /**
@@ -25,10 +28,17 @@ const hideMain = () => {
     $main.classList.remove('show')
 }
 
+// SHOW WORK MENU
+const showWorkMenu = () => {
+    $worksSlider.classList.add('animated', 'fadeOut', 'slow')
+    $workMenu.classList.add('animated', 'fadeIn', 'slow', 'delay-2s')
+}
+
 // SHOW ABOUT VIEW
 const showAbout = () => {
     $about.classList.add('show')
-    $home.classList.add('hide')
+    //$home.classList.add('hide')
+    $home.classList.add('animated', 'fadeOut')
 }
 
 // HIDE ABOUT VIEW
@@ -46,6 +56,11 @@ $home.addEventListener('wheel', (e) => {
     if (e.wheelDeltaY < -10){
         showMain()
     }
+})
+
+// CLICK ALL WORKS
+$allworks.addEventListener('click', () => {
+    showWorkMenu()
 })
 
 // CLICK ON ABOUT BUTTON

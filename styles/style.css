@@ -202,7 +202,11 @@ html, body {
     .main-view .works-slider .work-view {
       height: 100%;
       width: calc((100%/3)*2);
-      border: 1px solid black; }
+      border: 1px solid black;
+      background-image: url(../images/test.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: none; }
     .main-view .works-slider .work-selector {
       position: absolute;
       right: -25px;
@@ -222,7 +226,7 @@ html, body {
       .main-view .works-slider .work-selector .allworks-button:before {
         content: "";
         display: inline-block;
-        height: 0.6em;
+        height: 0.5em;
         vertical-align: bottom;
         width: 45px;
         margin-right: 20px;
@@ -230,7 +234,7 @@ html, body {
       .main-view .works-slider .work-selector .allworks-button:after {
         content: "";
         display: inline-block;
-        height: 0.6em;
+        height: 0.5em;
         vertical-align: bottom;
         width: 45px;
         margin-right: -100%;
@@ -239,7 +243,8 @@ html, body {
       .main-view .works-slider .work-selector .work-total {
         font-size: 20px; }
   .main-view .work-menu {
-    display: none !important;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -254,11 +259,13 @@ html, body {
       display: flex;
       justify-content: center;
       align-items: center; }
+      .main-view .work-menu .work-menu-item a {
+        text-decoration: none; }
       .main-view .work-menu .work-menu-item h3 {
         font-family: "Staatliches", cursive;
         font-size: 175px;
         color: black;
-        transition: all 0.2s ease-in-out; }
+        transition: all 0.4s ease-in-out; }
       .main-view .work-menu .work-menu-item h3:hover {
         color: white;
         -webkit-text-stroke: 1px;

@@ -48,6 +48,10 @@
             height: 100%;
             width: calc((100%/3)*2);
             border: 1px solid black;
+            background-image: url(../images/test.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: none;
         }
         .work-selector{
             position: absolute;
@@ -70,7 +74,7 @@
             .allworks-button:before{
                 content:"";
                 display: inline-block;
-                height: 0.6em;
+                height: 0.5em;
                 vertical-align: bottom;
                 width: 45px;
                 margin-right: 20px;
@@ -80,7 +84,7 @@
             .allworks-button:after{
                 content:"";
                 display: inline-block;
-                height: 0.6em;
+                height: 0.5em;
                 vertical-align: bottom;
                 width: 45px;
                 margin-right: -100%;
@@ -93,7 +97,9 @@
         }
     }
     .work-menu{
-        display: none !important;
+        //display: none !important;
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -108,11 +114,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            a{
+                text-decoration: none;
+            }
             h3{
                 font-family: $font-title;
                 font-size: 175px;
                 color: black;
-                transition: all 0.2s ease-in-out;
+                transition: all 0.4s ease-in-out;
             }
             h3:hover{
                 color: white;
